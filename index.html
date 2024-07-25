@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+    <title>Tienda de Pulseras </title>
+</head>
+<body>
+    <header>
+        <h1>Pulseras</h1>
+    </header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Brazalete de Oro</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4fExZM8LsZVPUm9503sXJ9vcI9Ici0UIXA&s" alt="" class="img-item">
+                <span class="precio-item">$800.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pulsera de Oro 18k en estilo cadena</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjgQ5GM6M53_LO9FeALBMS2rO6YAZVgm2uYA&s" alt="" class="img-item">
+                <span class="precio-item">$400.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pulsera de Oro 18k</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8HNL8kGyv-XiEAxkWfrak4W_rzsyieOS8A&s" alt="" class="img-item">
+                <span class="precio-item">$450.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pulsera de Oro 14k</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4-Se7FOi1NDZpbuzlMEgOzee7LMorhT8Sg&s" alt="" class="img-item">
+                <span class="precio-item">$250.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pulsera de Plata 925</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMdawqg6MSKfZ6bTjBCBusotvRQ2H2jCr2Cw&s" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pulsera de Corzones Plata 925</span>
+                <img src="https://cdnx.jumpseller.com/andrea-coggiola/image/26439767/ply965.jpg?1686241002" alt="" class="img-item">
+                <span class="precio-item">$50.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pulsera de Plata de Mujer</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2oOzx8-y40rQs9xThf8TdN21JDAOSMXVS-w&s" alt="" class="img-item">
+                <span class="precio-item">$60.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pulsera de Plata 925 100%</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdAF95uwwBiEzuCipRdn1nqi46YRw8BLcFA&s" alt="" class="img-item">
+                <span class="precio-item">$40.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pulsera de Plata <br> de Primera Ley</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3krdC_krZXJ4i56LbHs9dHWt0sfI8AvDy7w&s" alt="" class="img-item">
+                <span class="precio-item">$70.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
